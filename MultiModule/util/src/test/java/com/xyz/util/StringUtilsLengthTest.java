@@ -9,10 +9,12 @@ import org.junit.Test;
 
 public class StringUtilsLengthTest {
 
+    @Test
     public void testLengthOfString() {
 	String s = "Hello";
 	assertEquals("5", StringUtils.length(s));
     }
+    @Test
     public void testLengthOfEmptyString() {
 	String s = "";
 	assertEquals("0", StringUtils.length(s));

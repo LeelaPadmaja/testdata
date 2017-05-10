@@ -9,6 +9,7 @@ import org.junit.Test;
 
 public class StringUtilsAppendTest {
 
+    @Test
     public void testAppendString() {
 	String s = "Hello";
 	assertEquals("Hello Leela", StringUtils.appendText(s, " Leela"));
