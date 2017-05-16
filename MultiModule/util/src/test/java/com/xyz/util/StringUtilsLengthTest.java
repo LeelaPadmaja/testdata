@@ -7,6 +7,7 @@ import java.util.Date;
 
 import org.junit.Test;
 
+
 public class StringUtilsLengthTest {
 
     @Test
@@ -18,6 +19,12 @@ public class StringUtilsLengthTest {
     public void testLengthOfEmptyString() {
 	String s = "";
 	assertEquals("0", StringUtils.length(s));
+    }
+    
+    @Test
+    public void testLengthOfSpaceString(){
+	String s = " Hello World ";
+	assertEquals("13", StringUtils.length(s));
     }
 
 }
