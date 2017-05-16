@@ -16,4 +16,10 @@ public class DateUtilTest {
 	String expected = new SimpleDateFormat("dd-MMM-yyyy").format(new Date());
 	assertEquals(expected, actual);
     }
+    @Test
+    public void testGetToday_FAILED() throws InterruptedException {
+	Thread.sleep(100);
+	String actual = DateUtil.getToday();
+	assertEquals("", actual);
+    }
 }
