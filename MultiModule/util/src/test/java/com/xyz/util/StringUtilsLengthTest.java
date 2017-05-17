@@ -27,7 +27,7 @@ public class StringUtilsLengthTest {
     public void testLengthOfSpaceString() throws InterruptedException {
 	Thread.sleep(10000);
 	String s = " Hello World ";
-	assertEquals("13", StringUtils.length(s));
+	assertEquals("12", StringUtils.length(s));
     }
 
 }
